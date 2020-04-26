@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * @class En esta clase es donde vamos a guardar y obtener las variables y funciones
  */
@@ -25,6 +26,7 @@ class Table {
                 }
             }
         }
+        this.Variables.set(simbol.identifier, simbol);
         return null;
     }
     /**
@@ -44,3 +46,4 @@ class Table {
         return null;
     }
 }
+exports.Table = Table;

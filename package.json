@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "ts:node": "ts-node src/",
-        "build": "rimraf ./build && tsc ",
+        "build": "rimraf ./build && tsc && cpx \"./src/views/**\" ./build/views &&  cpx \"./src/public/**\" ./build/public",
         "dev": "nodemon",
         "start": "npm run build && node build/index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -29,6 +29,7 @@
         "@types/node": "^13.13.2",
         "body-parser": "^1.19.0",
         "cors": "^2.8.5",
+        "cpx": "^1.5.0",
         "ejs": "^3.0.2",
         "express": "^4.17.1",
         "jison": "^0.4.18",

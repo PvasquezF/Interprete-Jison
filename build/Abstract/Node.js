@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 class Node {
     /**
      *
@@ -13,3 +14,4 @@ class Node {
         this.column = column;
     }
 }
+exports.Node = Node;

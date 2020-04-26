@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * @class Esta clase me permite almacenar nodos en mis tablas de simbolos y de funciones
  */
@@ -15,3 +16,4 @@ class Simbol {
         this.value = value;
     }
 }
+exports.Simbol = Simbol;

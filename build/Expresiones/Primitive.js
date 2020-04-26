@@ -1,9 +1,11 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Node_1 = require("../Abstract/Node");
 /**
  * Crea un nuevo objeto Nodo expresion en base a un valor primitivo,
  * por ejemplo numeros, booleanos o cadenas(suponiendo que la cadena es primitivo)
  */
-class Primitive extends Node {
+class Primitive extends Node_1.Node {
     /**
      * @constructor Devuelve un nodo que internamente sera una expresion por tener un tipo
      * @param type Tipo del valor, puede ser numero, cadena o booleano
@@ -24,3 +26,4 @@ class Primitive extends Node {
         return this.value;
     }
 }
+exports.Primitive = Primitive;

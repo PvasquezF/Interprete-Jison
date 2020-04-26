@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * @class Nodo para almacenar errores ya sean lexicos, sintacticos o semanticos
  */
@@ -16,4 +17,8 @@ class Exception {
         this.line = line;
         this.column = column;
     }
+    toString() {
+        return `${this.type} ${this.description} ${this.line} ${this.column}`;
+    }
 }
+exports.Exception = Exception;
